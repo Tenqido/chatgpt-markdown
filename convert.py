@@ -7,7 +7,7 @@ def sanitize_filename(filename):
     if filename is None:
         return "Untitled"
     
-    # Remove or replace invalid characters for filenames
+    # Remove or replace invalid characters for filenames.
     invalid_characters = '<>:"/\\|?*\n\t'
     for char in invalid_characters:
         filename = filename.replace(char, '')
